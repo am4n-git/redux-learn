@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 function Home(props)
 {
-    console.warn("home props>>>", props.data)
+    console.warn("home props>>>", props)
     return(
         <div>
             
@@ -21,6 +21,8 @@ function Home(props)
 
                 <div className="btn-wrapper item">
                    <button onClick={()=>props.addtoCartHandler({price:1000, name:'iphone 12'})}>Add to Cart</button>
+
+                   <button onClick={()=>props.removeToCartHandler()}>Remove</button>
                 </div>
 
 
